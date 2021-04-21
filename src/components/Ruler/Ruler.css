@@ -1,0 +1,47 @@
+.ruler {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.ruler__horizontal {
+    height: 20px;
+    width: 40000px;
+    z-index: 1;
+}
+
+.ruler__vertical {
+    width: 20px;
+    height: 40000px;
+    z-index: 2;
+}
+
+.ruler__line {
+    position: absolute;
+    top: 0;
+    background-color: gray;
+    font-size: 8px;
+    display: block;
+}
+
+.ruler__horizontal > .ruler__line {
+    height: 5px;
+    width: 1px;
+}
+
+.ruler__horizontal > .ruler__line > .ruler__line__number {
+    position: absolute;
+    top: 5px;
+    left: -6px;
+}
+
+.ruler__vertical > .ruler__line {
+    height: 1px;
+    width: 5px;
+}
+
+.ruler__vertical > .ruler__line > .ruler__line__number {
+    position: absolute;
+    top: -6px;
+    left: 5px;
+}
